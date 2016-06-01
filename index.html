@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HomeWork</title>
+    <style>
+        ul {
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Урок "Форми": теги і їх атрибути</h1>
+<h2>Розкажіть трохи про себе...</h2>
+<h3></h3>
+<fieldset>
+    <legend><b>Коротко про себе</b></legend>
+    <form action="#">
+        <p>
+            <lable for="name">Ім'я:</lable>
+            <input type="text" id="name" name="Ім'я"><Br><br>
+
+            <lable for="last-name">Прізвище:</lable>
+            <input type="text" id="last-name" name="Призвище"><br><br>
+
+            <lable for="sex">Стать:</lable>
+            <input type="radio" id="sex" name="Стать">Чоловіча <input type="radio" id="sexx">Жіноча <br><br>
+
+            <lable for="age">Вік:</lable>
+            <input type="text" id="age" name="Вік" size="5">років <br>
+        </p>
+
+    </form>
+</fieldset>
+<fieldset>
+    <legend><b>Детальніше про себе</b></legend>
+    <form action="#">
+        <input type="radio" id="boy" name="Хлопець">Хлопець <br><br>
+        <input type="radio" id="girl" name="Дівчина">Дівчина <br>
+        <ul id="q">
+            <li><input type="text" id="date" name="Дата народження">Дата народження</li>
+            <li><input type="text" id="status" name="Сімейний стат">Сімейний стат</li>
+            <li><input type="text" id="socstatus" name="Соціальний статус">Соціальний статус</li>
+            <li><input type="text" id="place" name="Місце проживання">Місце проживання</li>
+        </ul>
+        <h3>Що ви зазвичай робите на вихідних:</h3>
+        <ul>
+            <li>
+                <lable for="sleap"></lable>
+                <input type="checkbox" id="sleap" name="slep">Сплю
+            </li>
+            <li>
+                <lable for="play"></lable>
+                <input type="checkbox" id="play" name="play">Граю з друзями
+            </li>
+            <li>
+                <lable for="fishing"></lable>
+                <input type="checkbox" id="fishing" name="fishing">Ходжу на рибалку
+            </li>
+            <li>
+                <lable for="games"></lable>
+                <input type="checkbox" id="games" name="games">Граю в ігри
+            </li>
+        </ul>
+        <h3>Розповісти про форми в книзі, присв'яченій HTML:</h3><br>
+        <select name="" id="list">
+            <option selected="selected">Site Frequency</option>
+            <option>1</option>
+            <option>2</option>
+        </select>
+        <h3>Стільки книг ви прочитали за життя:</h3>
+        <ul>
+            <li><input type="radio" id="">0-10 <br></li>
+            <li><input type="radio" id="">11-20 <br></li>
+            <li><input type="radio" id="">21-50 <br></li>
+            <li><input type="radio" id="">50+ <br></li>
+        </ul>
+
+
+        <h3>Ваші коментарі</h3>
+        <textarea name="" id="" cols="30" rows="10"></textarea><br>
+        <select name="" id="list1" multiple>
+            <option value="1">Перша позиція</option>
+            <option value="2">Друга позиція</option>
+            <option value="3">Третя позиція</option>
+        </select><br>
+
+    </form>
+</fieldset>
+<fieldset>
+    <legend><b>І на завершення</b></legend>
+    <form action="">
+        <lable for="not-you"></lable>
+        <input type="text" disabled id="not-you" name="not-you" placeholder="Це поле було введено до вас" size="25"><br><br>
+        <lable for="email"><b>Email:</b></lable>
+        <br>
+        <input type="email" id="email" name="email" placeholder="email" size="25"><br><br>
+        <p><b>Бажаєте підписатися на саму модну розсилку спама?</b><br><i>Оберіть категорію</i></p>
+        <br>
+        <ul>
+            <li>
+                <lable for="1">
+                    <input type="checkbox" id="1" name="1">Обладнання
+                </lable>
+            </li>
+            <li>
+                <lable for="2">
+                    <input type="checkbox" id="2" name="2">Як приготувати обід
+                </lable>
+            </li>
+            <li>
+                <lable for="3">
+                    <input type="checkbox" id="3" name="3">Зароби мільйон за два дні
+                </lable>
+            </li>
+        </ul>
+        <p><b>На стільки складна задача:</b></p>
+        <ul>
+            <li>
+                <lable for="a">
+                    <input type="radio" id="a" name="a">Зовсім не складна
+                </lable>
+            </li>
+            <li>
+                <lable for="b">
+                    <input type="radio" id="b" name="b">Так собі
+                </lable>
+            </li>
+            <li>
+                <lable for="c">
+                    <input type="radio" id="c" name="c">Ледве справився
+                </lable>
+            </li>
+        </ul>
+    </form>
+</fieldset>
+<br>
+<lable for="send"></lable>
+<input type="submit" id="send" name="send">
+</body>
+</html>
